@@ -1,5 +1,5 @@
 include Makefile.inc
-
+//;kwjiwhgiug//
 EXE = runner.exe
 
 APP_LIB = app.a
@@ -24,6 +24,7 @@ force:
 
 $(EXE): main.o $(APP_LIB) $(COMPONENT_LIBS)
 	$(LD) $^ $(LDFLAGS) -o $(EXE)
+
 
 $(APP_LIB): $(APP_OBJS)
 	$(AR) $(ARFLAGS) $@ $^
